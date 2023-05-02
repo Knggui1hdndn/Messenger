@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:paddingStart="15dp"
+       android:paddingEnd="15dp"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textSize="25dp"
+           android:textStyle="bold"
+           android:text="Tìm tài khoản"
+           android:fontFamily="sans-serif-medium"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textSize="15dp"
+           android:text="Nhập số điện thoại của bạn" />
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           app:endIconMode="clear_text">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:hint="Nhập số điện  thoại"
+               android:inputType="text"
+               android:autofillHints="" />
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           app:cardCornerRadius="8dp">
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background ="@color/purple_500"
+               android:foreground="?attr/selectableItemBackground"
+               android:text="Tiếp tục"
+               android:textAllCaps="false"
+               android:textColor="@color/white" />
+       </androidx.cardview.widget.CardView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textSize="15dp"
+           android:textStyle="bold"
+           android:id="@+id/s"
+           android:layout_gravity="center_horizontal"
+           android:text="Tìm kiếm bằng email"
+           android:fontFamily="sans-serif-medium"/>
+   </LinearLayout>
+</LinearLayout>

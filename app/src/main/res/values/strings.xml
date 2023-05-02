@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="suggest_brithday">Chọn ngày sinh của bạn.Bạn luôn có thể đặt thông tin này thành chế độ riêng tư vào lúc khác</string>
+    <string name="suggest_brithday_error">Hình như bạn đã nhập sai thông tin . Hãy nhớ đúng ngày sinh nhật của mình nhé</string>
+    <string name="suggest_name">Nhập tên bạn sử dụng trong đời thực</string>
+    <string name="suggest_name_error">Vui lòng điền đủ họ và tên của bạn!</string>
+    <string name="suggest_phone_error">Vui lòng điền đủ họ và tên của bạn!</string>
+    <string name="suggest_phone">Về sau bạn có thể thay đổi những ai có thể nhìn thấy số điện thoại của mình trên trang cá nhân</string>
+    <string name="title_activity_list_chat">ListChatActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Đoạn chat</string>
+    <string name="menu_storage">Tin nhắn đang chờ</string>
+    <string name="menu_cho">Kho lưu chữ</string>
+
+    <string name="menu_call">Cuộc gọi</string>
+    <string name="menu_contacts">Danh bạ</string>
+    <string name="menu_story">Tin</string>
+
+</resources>

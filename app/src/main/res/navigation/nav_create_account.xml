@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_create_account"
+    app:startDestination="@id/CR_Name">
+    <fragment
+        android:id="@+id/CR_brithday"
+        android:name="com.example.messenger.view.fragment.createAcount.CRBrithday"
+        android:label=""
+        tools:layout="@layout/fragment_c_r_brithday">
+        <argument
+            android:name="user"
+            app:argType="com.example.messenger.model.entity.User" />
+        <action
+
+            android:id="@+id/action_CR_brithday_to_crPhoneNumber"
+            app:destination="@id/crPhoneNumber"
+            app:enterAnim="@anim/stripe_3ds2_challenge_transition_slide_in"
+            app:exitAnim="@anim/stripe_3ds2_challenge_transition_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/CR_Otp"
+        android:name="com.example.messenger.view.fragment.createAcount.CROtp"
+        android:label=""
+        tools:layout="@layout/fragment_c_r__otp">
+        <argument
+            android:name="user"
+            app:argType="com.example.messenger.model.entity.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/CR_Name"
+        android:name="com.example.messenger.view.fragment.createAcount.CRName"
+        android:label=""
+        tools:layout="@layout/fragment_c_r__name">
+
+        <action
+
+            android:id="@+id/action_CR_Name_to_crSex"
+            app:destination="@id/crSex"
+            app:enterAnim="@anim/stripe_3ds2_challenge_transition_slide_in"
+            app:exitAnim="@anim/stripe_3ds2_challenge_transition_slide_out"
+           />
+
+    </fragment>
+    <fragment
+        android:id="@+id/crPassword"
+        android:name="com.example.messenger.view.fragment.createAcount.CrPasswordFragment"
+        android:label=""
+        tools:layout="@layout/fragment_cr_password">
+        <action
+            android:id="@+id/action_crPassword_to_CR_Otp"
+            app:destination="@id/CR_Otp"
+            app:enterAnim="@anim/stripe_3ds2_challenge_transition_slide_in"
+            app:exitAnim="@anim/stripe_3ds2_challenge_transition_slide_out" />
+        <argument
+            android:name="user"
+            app:argType="com.example.messenger.model.entity.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/crPhoneNumber"
+        android:name="com.example.messenger.view.fragment.createAcount.CrPhoneNumberFragment"
+        android:label=""
+        tools:layout="@layout/fragment_cr_phone_number">
+        <action
+            android:id="@+id/action_crPhoneNumber_to_crPassword"
+            app:destination="@id/crPassword"
+
+            app:enterAnim="@anim/stripe_3ds2_challenge_transition_slide_in"
+            app:exitAnim="@anim/stripe_3ds2_challenge_transition_slide_out" />
+        <argument
+            android:name="user"
+            app:argType="com.example.messenger.model.entity.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/crSex"
+        android:name="com.example.messenger.view.fragment.createAcount.CrSexFragment"
+        android:label=""
+        tools:layout="@layout/fragment_cr_sex">
+        <argument
+            android:name="user"
+            app:argType="com.example.messenger.model.entity.User" />
+        <action
+
+            android:id="@+id/action_crSex_to_CR_brithday"
+            app:destination="@id/CR_brithday"
+            app:enterAnim="@anim/stripe_3ds2_challenge_transition_slide_in"
+            app:exitAnim="@anim/stripe_3ds2_challenge_transition_slide_out" />
+    </fragment>
+</navigation>

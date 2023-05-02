@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+         <item
+            android:id="@+id/listChatFragment"
+            android:icon="@drawable/ic_baseline_message_24"
+            android:title="@string/menu_home"
+           />
+        <item
+            android:id="@+id/pendingMessageFragment"
+            android:icon="@drawable/ic_baseline_announcement_24"
+            android:title="@string/menu_storage"
+          />
+        <item
+            android:id="@+id/storageMessageFragment"
+            android:icon="@drawable/ic_baseline_folder_copy_24"
+            android:title="@string/menu_cho"
+            />
+
+</menu>

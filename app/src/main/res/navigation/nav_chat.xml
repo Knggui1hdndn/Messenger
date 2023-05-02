@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_chat"
+    app:startDestination="@id/listChatFragment">
+
+    <fragment
+        android:id="@+id/listChatFragment"
+        android:name="com.example.messenger.ListChatFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_list_chat" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.messenger.ContactsFragment"
+        android:label="@string/menu_contacts"
+        tools:layout="@layout/fragment_contacts">
+        <action
+            android:id="@+id/action_contactsFragment_to_listChatFragment"
+            app:destination="@id/listChatFragment"
+            app:popUpTo="@id/listChatFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.example.messenger.CallFragment"
+        android:label="@string/menu_call"
+        tools:layout="@layout/fragment_call">
+        <action
+            android:id="@+id/action_callFragment_to_listChatFragment"
+            app:destination="@id/listChatFragment"
+            app:popUpTo="@id/listChatFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.example.messenger.StoryFragment"
+        android:label="@string/menu_story"
+        tools:layout="@layout/fragment_story">
+
+        <action
+            android:id="@+id/action_storyFragment_to_listChatFragment"
+            app:destination="@id/listChatFragment"
+            app:popUpTo="@id/listChatFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pendingMessageFragment"
+        android:name="com.example.messenger.PendingMessageFragment"
+        android:label="@string/menu_cho"
+        tools:layout="@layout/fragment_pending_message">
+        <action
+            android:id="@+id/action_pendingMessageFragment_to_listChatFragment"
+            app:destination="@id/listChatFragment"
+            app:popUpTo="@id/listChatFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/storageMessageFragment"
+        android:name="com.example.messenger.StorageMessageFragment"
+        android:label="@string/menu_storage"
+        tools:layout="@layout/fragment_storage_message">
+        <action
+            android:id="@+id/action_storageMessageFragment_to_listChatFragment"
+            app:destination="@id/listChatFragment"
+            app:popUpTo="@id/listChatFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
